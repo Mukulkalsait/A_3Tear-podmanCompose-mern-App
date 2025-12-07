@@ -22,8 +22,8 @@ Get it live in under 5 minutes—no manual installs required. This spins up both
 
 ### One-Command Launch
 ```bash
-git clone https://github.com/yourusername/A_3Tear-podmanCompose-mern-App.git
-cd A_3Tear-podmanCompose-mern-App/lazycontact  # Or wherever your project root is
+git clone https://github.com/yourusername/A_3Tear-podmanCompose-mern-App.git  # Replace with your actual repo URL
+cd A_3Tear-podmanCompose-mern-App  # Adjust if your local folder is named differently (e.g., A_3Tear)
 podman-compose up --build
 ```
 
@@ -47,25 +47,42 @@ Stop with `Ctrl+C` or `podman-compose down`. Data persists in `./backend/data/co
 
 For production/home-server vibes, add a reverse proxy like Caddy or Traefik in another container for HTTPS/domain support.
 
-![Dashboard ](media/videos/appVideo.mp4)  
-*Main dashboard: Add contacts with name, number, notes. One-click WhatsApp/Call buttons light up on hover.*
+## 📸 Demo Media
 
-![Add Contact Modal](screenshots/add-contact.png)  
+### Dashboard Demo Video
+<video src="media/videos/appVideo.mp4" controls width="800" height="450" autoplay muted loop>
+  Your browser does not support the video tag. Download it [here](media/videos/appVideo.mp4).
+</video>
+
+*Main dashboard: Add contacts with name, number, notes. One-click WhatsApp/Call buttons light up on hover. (Video auto-plays muted; use controls for sound/fullscreen.)*
+
+![Add Contact Modal](media/images/add-contact.png)  
 *Quick add form—save and share instantly across devices.*
 
-![LAN Access Demo Video](videos/lan-share.mp4)  
+### LAN Access Demo
+<video src="media/videos/lan-share.mp4" controls width="800" height="450">
+  Your browser does not support the video tag. Download it [here](media/videos/lan-share.mp4).
+</video>  
 *(Short video: Launch on host, access from phone on Wi-Fi—seamless!)*
+
+![WhatsApp/Call in Action](media/images/action-buttons.png)  
+*Hover a contact: Instant links to chat or call—cross-device magic.*
 
 ## 📁 Project Layout
 ```
-lazycontact/
+A_3Tear/  # Repo root (or your local name)
 ├── backend/          # Express + TypeScript API (JSON persistence for contacts)
 │   ├── data/         # contacts.json (auto-created on first save)
-│   ├── src/          # API routes, models, utils
-│   └── podman-compose.yml  # Orchestrates both services
-└── frontend/         # React (Vite) dashboard in TypeScript
-    ├── src/          # Components: ContactList, ContactForm, ActionButtons
-    └── public/       # Static assets
+│   └── src/          # API routes, models, utils
+├── frontend/         # React (Vite) dashboard in TypeScript
+│   ├── src/          # Components: ContactList, ContactForm, ActionButtons
+│   └── public/       # Static assets
+├── media/            # Screenshots, videos, diagrams
+│   ├── images/       # Static images (e.g., add-contact.png)
+│   └── videos/       # Demo videos (e.g., appVideo.mp4)
+├── LICENSE
+├── README.md
+└── podman-compose.yml  # Orchestrates both services
 ```
 
 ## 🛠️ Backend Details
@@ -111,9 +128,6 @@ VITE_API_URL=http://localhost:4000
 - Edit/Delete inline.
 - Action buttons: WhatsApp opens in-app browser; Call triggers device dialer.
 
-![WhatsApp/Call in Action](screenshots/action-buttons.png)  
-*Hover a contact: Instant links to chat or call—cross-device magic.*
-
 ## 🔧 Development Tips
 - **Start Order**: Backend first (for API availability), then frontend. Podman-Compose handles sequencing.
 - **Data Swap**: JSON is simple; migrate to MongoDB by updating backend models—UI stays the same.
@@ -122,8 +136,8 @@ VITE_API_URL=http://localhost:4000
 - **Extend It**: Add QR code for easy LAN sharing, or integrate email/SMS reminders.
 
 ## 📸 Media Gallery
-- **[Full Demo Video](media/videos/)**: End-to-end walkthrough—add contact, share on LAN, one-click actions.
-- **[Architecture Diagram](media/imagees/)**: Backend → JSON → Frontend flow, with Podman network.
+- **[Full Demo Video Download](media/videos/appVideo.mp4)**: End-to-end walkthrough—add contact, share on LAN, one-click actions.
+- **[Architecture Diagram](media/images/architecture.png)**: Backend → JSON → Frontend flow, with Podman network. (Add this PNG if you have it; create a quick one in Draw.io if not.)
 
 ## 🤝 Contributing & License
 Fork, PRs welcome! Issues for bugs/features. MIT License—use freely for your home setups.
@@ -134,3 +148,6 @@ Fork, PRs welcome! Issues for bugs/features. MIT License—use freely for your h
 
 *Deployed example: [Live on my LAN](http://192.168.1.x:5173) (yours will vary).*  
 Questions? Open an issue or ping me.
+
+---
+
