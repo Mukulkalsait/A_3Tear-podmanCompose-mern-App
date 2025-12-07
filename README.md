@@ -12,6 +12,13 @@ Key features:
 
 Perfect for families, roommates, or small teams who want a communal "service directory" that's always a tab away. Built with TypeScript for reliability, and fully containerized for portable deploys.
 
+<img src="./media/images/dashboard.png" alt="">
+<img src="./media/images/mobileDashboard.png" alt="">
+<img src="./media/images/lsd.png" alt="">
+<img src="./media/images/podman-compose.png" alt="">
+<img src="./media/images/dashboard2.png" alt="">
+<img src="./media/images/contactlist.png" alt="">
+
 ## 🚀 Quick Start: Run with Podman Compose (LAN-Ready)
 
 Get it live in under 5 minutes—no manual installs required. This spins up both backend and frontend in isolated containers, with data persistence via bind mounts.
