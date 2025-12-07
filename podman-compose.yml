@@ -1,0 +1,30 @@
+services:
+  backend:
+    container_name: temporary-contacts-backend
+    build:
+      context: ./backend
+    image: temporary-contacts-backend:latest
+    environment:
+      PORT: "4000"
+      NODE_ENV: production
+    volumes:
+      - ./backend/data:/app/data
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+
+  frontend:
+    container_name: temporary-contacts-frontend
+    image: temporary-contacts-frontend:latest
+    build:
+      context: ./frontend
+      args:
+        # VITE_API_URL: http://YOUR_HOST_IP:4000
+        VITE_API_URL: http://10.212.245.111:4000
+    environment:
+      - VITE_API_URL=http://10.212.245.111:4000
+    depends_on:
+      - backend
+    ports:
+      - "5173:4173"
+    restart: unless-stopped
