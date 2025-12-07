@@ -47,7 +47,7 @@ Stop with `Ctrl+C` or `podman-compose down`. Data persists in `./backend/data/co
 
 For production/home-server vibes, add a reverse proxy like Caddy or Traefik in another container for HTTPS/domain support.
 
-![Dashboard Screenshot](screenshots/dashboard.png)  
+![Dashboard ](media/videos/appVideo.mp4)  
 *Main dashboard: Add contacts with name, number, notes. One-click WhatsApp/Call buttons light up on hover.*
 
 ![Add Contact Modal](screenshots/add-contact.png)  

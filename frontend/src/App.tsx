@@ -102,8 +102,8 @@ function App() {
         <div>
           <p className="eyebrow">Temporary Contacts</p>
           <h1>Keep Family Contact Together 👪 </h1>
-          <p className="subtitle">
-            Keep Grocery shop, family doctor, barber, AC repair guy, or distant relatives-without Contacts without cluttering personal phones.
+          <p className="subtitle ">
+            <b>Keep Grocery shop, family doctor, barber, AC repair guy, or distant relatives-without Contacts without cluttering personal phones.</b>
           </p>
           <ul>
             <li>Keep Your Phonesbook Limited and Fast. 🚀</li>
