@@ -101,10 +101,17 @@ function App() {
       <header>
         <div>
           <p className="eyebrow">Temporary Contacts</p>
-          <h1>Keep short-term contacts tidy</h1>
+          <h1>Keep Family Contact Together 👪 </h1>
           <p className="subtitle">
-            Add, update, and reach out without mixing temporary numbers into your primary phonebook.
+            Keep Grocery shop, family doctor, barber, AC repair guy, or distant relatives-without Contacts without cluttering personal phones.
           </p>
+          <ul>
+            <li>Keep Your Phonesbook Limited and Fast. 🚀</li>
+            <li>One Person Save, Avialable to All. 🕸️</li>
+            <li>One Click Whatsapp  and Call ⌕</li>
+            <li>Privacy-first:🔐 Local-only storage.</li>
+          </ul>
+
         </div>
       </header>
 
