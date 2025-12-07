@@ -20,9 +20,9 @@ services:
       context: ./frontend
       args:
         # VITE_API_URL: http://YOUR_HOST_IP:4000
-        VITE_API_URL: http://10.212.245.111:4000
+        VITE_API_URL: http://192.168.1.10:4000  # DX: MAKE SURE TO UPDATE THE LOCAL IP
     environment:
-      - VITE_API_URL=http://10.212.245.111:4000
+      - VITE_API_URL=http://192.168.1.10:4000 # DX: MAKE SURE TO UPDATE THE LOCAL IP
     depends_on:
       - backend
     ports:
