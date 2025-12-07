@@ -50,7 +50,8 @@ For production/home-server vibes, add a reverse proxy like Caddy or Traefik in a
 ## 📸 Demo Media
 
 ### Dashboard Demo Video
-<video src="media/videos/appVideo.mp4" controls width="800" height="450" autoplay muted loop>
+
+<video src="/media/videos/appVideo.mp4" controls width="800" height="450" autoplay muted loop>
   Your browser does not support the video tag. Download it [here](media/videos/appVideo.mp4).
 </video>
 
