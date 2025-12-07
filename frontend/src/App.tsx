@@ -108,7 +108,7 @@ function App() {
           <ul>
             <li>Keep Your Phonesbook Limited and Fast. 🚀</li>
             <li>One Person Save, Avialable to All. 🕸️</li>
-            <li>One Click Whatsapp  and Call ⌕</li>
+            <li>One Click Whatsapp and Call ☎️</li>
             <li>Privacy-first:🔐 Local-only storage.</li>
           </ul>
 
