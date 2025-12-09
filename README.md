@@ -69,9 +69,7 @@ For production/home-server vibes, add a reverse proxy like Caddy or Traefik in a
 *Quick add form—save and share instantly across devices.*
 
 ### LAN Access Demo
-<video src="https://youtu.be/lfyQSl1dsLg" controls width="800" height="450">
-  Your browser does not support the video tag. Download it [here](media/videos/lan-share.mp4).
-</video>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lfyQSl1dsLg?si=vlYpiNGDN-SGuclZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 *(Short video: Launch on host, access from phone on Wi-Fi—seamless!)*
 
 ![WhatsApp/Call in Action](media/images/action-buttons.png)  
