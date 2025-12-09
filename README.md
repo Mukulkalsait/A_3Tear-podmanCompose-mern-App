@@ -58,7 +58,8 @@ For production/home-server vibes, add a reverse proxy like Caddy or Traefik in a
 
 ### Dashboard Demo Video
 
-<video src="https://github.com/Mukulkalsait/A_3Tear-podmanCompose-mern-App/blob/main/media/videos/appVideo.mp4" controls width="800" height="450" autoplay muted loop>
+
+<video src="https://youtu.be/lfyQSl1dsLg" controls width="800" height="450" autoplay loop>
   Your browser does not support the video tag. Download it [here](media/videos/appVideo.mp4).
 </video>
 
