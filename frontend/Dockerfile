@@ -1,3 +1,6 @@
+#------------------------------------------------------------
+# STAGE  1 
+#------------------------------------------------------------
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -16,10 +19,15 @@ COPY src ./src
 RUN npm install
 RUN npm run build
 
+#------------------------------------------------------------
+# STAGE  2 
+#------------------------------------------------------------
 FROM node:20-alpine
 WORKDIR /app
 
 RUN npm install -g serve
+
+# taken from builder stage into this stage.
 COPY --from=builder /app/dist ./dist
 
 EXPOSE 4173
